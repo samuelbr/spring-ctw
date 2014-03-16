@@ -1,0 +1,15 @@
+<?page title="Auto Generated index.zul"?>
+<window title="Hello World!!" border="normal" apply="org.zkoss.bind.BindComposer" 
+	viewModel="@id('vm') @init('com.github.samuelbr.springctw.TestViewModel')">
+
+	<vbox>
+	
+	<intbox value="@bind(vm.count)" placeholder="Count"/>
+	
+	<button label="Test" onClick="@command('test')"/>
+
+	<label value="@load(vm.output)"/>
+	
+	</vbox>
+
+</window>
